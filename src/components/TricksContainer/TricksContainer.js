@@ -2,7 +2,6 @@ import "./TricksContainer.css"
 import TrickCard from "../TrickCard/TrickCard"
 
 function TricksContainer( {tricks} ) {
-  console.log("tricks inside container", tricks)
   const trickCards = tricks.map((trick) => {
     return <TrickCard 
     id={trick.id} 

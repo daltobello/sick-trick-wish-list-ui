@@ -36,11 +36,11 @@ function Form({ addTrick }) {
 
   return (
     <form>
-
-      <label for="choose-stance">Choose Stance:</label>
+      
+      <label>Choose Stance:</label>
       <select name='stance' onChange={(event) => setStance(event.target.value)}>
-        <option value={stance}>Regular</option>
-        <option value={stance}>Switch</option>
+        <option value="regular">Regular</option>
+        <option value="switch">Switch</option>
       </select>
       
       <input
@@ -51,13 +51,13 @@ function Form({ addTrick }) {
       onChange={(event) => setTrickName(event.target.value)}
       />
 
-    <label for="choose-obstacle">Choose Obstacle:</label>
+    <label>Choose Obstacle:</label>
       <select name='obstacle' onChange={(event) => setObstacle(event.target.value)}>
-        <option value={obstacle}>Flat ground</option>
-        <option value={obstacle}>Ledge</option>
-        <option value={obstacle}>Rail</option>
-        <option value={obstacle}>Stairs</option>
-        <option value={obstacle}>Pool</option>
+        <option value="flatground">Flat ground</option>
+        <option value="ledge">Ledge</option>
+        <option value="rail">Rail</option>
+        <option value="stairs">Stairs</option>
+        <option value="pool">Pool</option>
       </select>
 
       
