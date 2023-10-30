@@ -28,6 +28,7 @@ describe('sick trick wish list landing page', () => {
     .get('[name="trick-name"]').type("kickflip").should("have.value", "kickflip")
     .get('select[name="obstacle"]').select("ledge").should("have.value", "ledge")
     .get('[name="tutorial"]').type("www.coolurl.com").should("have.value", "www.coolurl.com")
-
+    .get(".send-it-btn").click()
+    .get(".trick-card-container").children().should("have.length", 4)
   })
 })
